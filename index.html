@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="description" content="Free information about movie & series like actor,director,release date,IMDb rating & may more......">
+  <meta name="keywords" content="OMDB,omdb, api,movie api,movies,series,information,imdb,IMDb,shershaah,mirzapur">
+  <meta name="author" content="Aakash Dave">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBuffzz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c096fa5e26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- data-bs-ride="carousel" -->
+    <section id="carouselExampleFade"  data-bs-interval="false" class="carousel slide carousel-fade container-fluid">
+        <div class="carousel-inner">
+            <div class="carousel-item active intro-page">
+              <div class="headone">
+                <div class="my-heading">
+                    <h1>MovieBuffzz</h1>
+                </div>
+                <div class="my-subhead">
+                    <h4>Search Your Favourite Movie <br> Explore More About Movie/series</h4>
+                </div>
+                <div class="my-info">
+                    <p>Now you can easily get info. about upcoming & old movies. <br> Just click on Dashboard & search your movie name. <br> Thank you.
+                    </p>
+                </div>
+                <div class="Dashboard">
+                    <a type="button" href="#main-section" data-bs-target="#carouselExampleFade" data-bs-slide="next"><i class="fas fa-plus"></i> Dashboard</a>
+                </div>
+              </div>
+              <div class="intro-one">
+                <div class="list">
+                    <h1>Suitable for Searching movie name, director and actor</h1>
+                    <ul>
+                        <li>Movie, film & Web show listing and management using omdb api
+                            </li>
+                        <li>Film search system, film database & casting
+                            </li>
+                        <li>Suitable for movie studio, director and actor</li>
+                        <li>Summaries, genres, release dates, languages, box office, technical details, parent guides and more.</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" id="main-section">
+              <div class="main container-fluid">
+              <div class="container container-box">
+                <h1 class="text-center">MovieBuffzz</h1>
+                <form autocomplete="off" id="movieForm" class="input-part">
+                    <div class="form-group utilities">
+                        <label for="movie" style="font-weight: bold;">Movie/Series Name</label>
+                        <input id="movie" type="text" placeholder="Movie..." class="form-control"></input>
+                    </div>
+                    <div class="form-group d-grid utilities">
+                        <button class="btn btn-block btn-danger text-center">Search Movie</button>
+                    </div>
+                </form>
+                <div id="result"></div>
+            </div>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="about-page container-fluid">
+                    <h1 class="text-center">MovieBuffzz</h1>
+                    <div class="container about-us text-center">
+                       <h2>About</h2>
+                       <div class="para">
+                           <p>I created this website using online movie api.You have to search any movie & series in a search box & related data will be shown on dashboard. <br><br> So,It's an online database containing information and statistics about movies, TV shows and video games as well as actors, directors and other film industry professionals. <br> This information can include lists of cast and crew members, movie release dates and box office information, plot summaries, trailers, actor and director biographies and other trivia.</p>
+                           <p>Information on IMDb & OMDb comes from a variety of sources, such as filmmakers, film studios, on-screen credits and other official sources. <br><br> However, much of the information comes from users themselves, who can submit facts in a wiki-style format. <br><br> Unlike traditional wiki sites, it always authenticates information before it appears online -- although errors do show up, and the website allows users to report possible mistakes so they can be fixed.</p>
+                           <p>Thank you,Contact-us and give your honest review</p>
+                       </div>
+                    </div>
+                    <div class="container Contact-us text-center">
+                       <h2>Contact-us</h2>
+                       <div class="icons">
+                           <a target="_blank" href="https://instagram.com/__aakash_dave__?utm_medium=copy_link"><i class="fab fa-instagram fa-2x"></i></a>
+                           <a target="_blank" href="mailto: abc@example.com"><i class="fas fa-envelope-square fa-2x"></i></a>
+                       </div>
+                    </div>
+        
+                </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </section>
+</body>
+</html>

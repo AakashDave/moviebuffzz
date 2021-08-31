@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Modern+Antiqua&family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#carouselExampleFade {
+  width: 100%;
+  background: #bd1616;
+  height: 100vh;
+  color: #ffe6e6;
+  padding: 0px;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+  position: fixed;
+}
+.intro-page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.headone {
+  /* border-radius: 0 0 22px 0; */
+  padding: 10px;
+  width: 40%;
+  height: 100vh;
+  background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 51px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 51px
+    ),
+    linear-gradient(90deg, rgb(8, 8, 8), rgb(8, 8, 8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-heading,
+.main h1,
+.about-page h1 {
+  color: #ffe6e6;
+  font-family: "Nosifer", cursive;
+  transition: 2s;
+}
+.my-heading:hover,
+.main h1:hover,
+.about-page h1:hover {
+  color: #ff2626;
+}
+.my-subhead {
+  color: #ff2626;
+  text-align: center;
+  font-family: "Modern Antiqua", cursive;
+  margin: 25px 0 50px;
+}
+.my-info {
+  text-align: center;
+  color: #ffe6e6;
+  font-family: "Modern Antiqua", cursive;
+  margin-bottom: 50px;
+}
+.Dashboard {
+  margin-bottom: 80px;
+  font-family: "Modern Antiqua", cursive;
+}
+.Dashboard a {
+  color: #ff2626;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #ff2626;
+  padding: 5px 10px;
+}
+.Dashboard a:hover {
+  background-color: #ff2626;
+  color: #ffe6e6;
+}
+.intro-one {
+  font-family: "Modern Antiqua", cursive;
+  height: 100vh;
+  width: 60%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  line-height: 2.5rem;
+}
+.intro-one::after {
+  /* border-radius: 22px 0 0 0; */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.795)),
+    url("/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.intro-one h1 {
+  transition: 0.5s;
+  text-decoration: underline;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 51px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 51px
+    ),
+    linear-gradient(90deg, rgb(8, 8, 8), rgb(8, 8, 8));
+}
+.input-part {
+  font-family: "Modern Antiqua", cursive;
+}
+.input-part input {
+  color: black;
+  font-weight: bold;
+}
+.container-box h1,
+.about-page h1 {
+  margin-top: 20px;
+}
+.utilities {
+  margin: 20px 0;
+}
+.utilities button {
+  font-size: 20px;
+}
+#result {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Modern Antiqua", cursive;
+}
+#result .pic-img {
+  padding: 0 20px;
+}
+#result h2 {
+  font-size: 25px;
+  transition: 1s;
+}
+#result h2:hover {
+  color: #ff2626;
+}
+.about-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.about-page::after {
+  /* border-radius: 22px 0 0 0; */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.877)),
+    url("/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.about-us {
+  margin-top: 10px;
+  font-family: "Modern Antiqua", cursive;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 25px;
+}
+.para {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.list h1:hover {
+  color: #ff2626;
+}
+.about-us h2,
+.Contact-us h2 {
+  font-size: 38px;
+  color: #ff2626;
+}
+.about-us h2:hover,
+.Contact-us h2:hover {
+  color: #ffe6e6;
+}
+.Contact-us {
+  margin-top: 30px;
+  padding: 25px 0;
+  font-family: "Modern Antiqua", cursive;
+}
+.icons a {
+  color: white;
+  padding: 0 5px;
+}
+.icons a:hover {
+  color: #ff2626;
+}
+
+@media screen and (max-width: 982px) {
+  .headone {
+    padding: 30px;
+    width: 40%
+  }
+  .my-heading h1{
+    font-size: 25px;
+  }
+  .my-subhead h4{
+    font-size: 17px;
+  }
+  .my-info p{
+    font-size: 13px;
+  }
+  .intro-one {
+    font-family: "Modern Antiqua", cursive;
+    height: 100vh;
+    width: 60%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    line-height: 2.5rem;
+  }
+  .intro-one h1{
+    font-size: 22px;
+  }
+  .intro-one ul{
+    font-size: 13px;
+  }
+
+  #result h2 {
+    font-size: 20px;
+  }
+  .para {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:666px) {
+  .my-heading h1{
+    font-size: 27px;
+  }
+  .headone{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: none;
+    top: 0;
+    left: 0;
+  }
+  .headone::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.877)),
+      url("/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .intro-one{
+    background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 51px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 51px
+    ),
+    linear-gradient(90deg, rgb(8, 8, 8), rgb(8, 8, 8));
+  }
+  .intro-one::after{
+    background-color: #bd1616;
+  }
+  .intro-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .headone,.intro-one{
+    width: 101%;
+  }
+  #main-section,.main{
+    width: 101%;
+    height: 200vh;
+  }
+  #result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Modern Antiqua", cursive;
+  }
+  #result .pic-img {
+    margin: 20px 0;
+  padding:40px;
+}
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-page{
+    width: 101%;
+    height: 200vh;
+  }
+  .about-page::after {
+    height: 200vh;
+    width: 101%;
+  }
+  .para {
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+}
+@media screen and (max-width:400px){
+
+  .about-us{
+    padding: 0 0;
+    height: 80%;
+    align-items: center;
+  }
+  .about-us h2{
+    margin-top: 20px;
+  }
+}
